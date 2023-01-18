@@ -1,0 +1,25 @@
+<h2>Rombusz területe</h2>
+
+<form [formGroup]="rombForm" (ngSubmit)="onSubmit()">
+  <div class="mt-3">
+    <input type="text" placeholder="oldal"
+    formControlName="side"
+    class="form-control">
+  </div>
+  <div class="mt-3">
+    <input type="text" placeholder="Alfa szög"
+    formControlName="angle"
+    class="form-control">
+  </div>
+  <button type="submit"
+  class="btn btn-primary mt-3">Számít</button>
+
+  <div class="mt-3">
+    <input type="text" readonly
+    formControlName="area"
+    class="form-control">
+  </div>
+    
+</form>
+
+
